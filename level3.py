@@ -44,5 +44,11 @@ for i in range(t):
 
 
 #10951
-t = int(input())
+
+while True:
+    try:
+        a, b = map(int, input().split())
+    except:
+        break
+    print(a+b)
 
