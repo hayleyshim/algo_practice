@@ -33,10 +33,16 @@ for i in range(t): # t 만큼 반복K
     print("Case #", i+1, ":", a+b, sep='')
 """
 
-
+"""
 #11022
 t = int(input())
 
 for i in range(t):
     a,b = map(int, input().split())
     print(f"Case #{i+1}: {a} + {b} = {a+b}")
+"""
+
+
+#10951
+t = int(input())
+
