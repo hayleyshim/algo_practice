@@ -42,7 +42,7 @@ for i in range(t):
     print(f"Case #{i+1}: {a} + {b} = {a+b}")
 """
 
-
+"""
 #10951
 
 while True:
@@ -51,4 +51,14 @@ while True:
     except:
         break
     print(a+b)
+"""
 
+#10952
+
+while True:
+    a, b = map(int, input().split())
+
+    if(a == 0 and b == 0):
+        break
+    else:
+        print(a + b)
