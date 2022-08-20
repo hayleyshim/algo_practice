@@ -33,16 +33,34 @@ else:
 
 N = int(input())
 data = list(map(int, input().split()))
-count = 0
+prime_count = 0
 
-for n in range(data):
-   if n != 1:
+for n in data:
+   primeYes = True
+   if n > 1:
        for i in range(2, n):
            if n % i == 0:
-               break
-           else:
-               count += 1
+               primeYes = False
+       if primeYes:
+           prime_count += 1
+
+print(prime_count)
+
+
+N = int(input())
+data = list(map(int, input().split()))
+count = 0
+
+for n in data:
+   if n <= 1:
+       continue
+   primeYes = True
+   for i in range(2, n):
+       if n % i == 0:
+           primeYes = False
+           break
+   if primeYes:
+       count += 1
 
 print(count)
-
 
