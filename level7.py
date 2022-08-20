@@ -7,7 +7,7 @@
 노트북 가격이 C만원으로 책정되었다고 한다. 일반적으로 생산 대수를 늘려 가다 보면 어느 순간 총 수입(판매비용)이 총 비용(=고정비용+가변비용)보다 많아지게 된다. 최초로 총 수입이 총 비용보다 많아져 이익이 발생하는 지점을 손익분기점(BREAK-EVEN POINT)이라고 한다.
 
 A, B, C가 주어졌을 때, 손익분기점을 구하는 프로그램을 작성하시오.
-"""
+
 
 A= 1000
 B= 70
@@ -22,3 +22,27 @@ if b >= c:
     print(-1)
 else:
     print(a//(c-b)+1)
+
+"""
+
+"""
+# 1978
+주어진 수 N개 중에서 소수가 몇 개인지 찾아서 출력하는 프로그램을 작성하시오.
+
+"""
+
+N = int(input())
+data = list(map(int, input().split()))
+count = 0
+
+for n in range(data):
+   if n != 1:
+       for i in range(2, n):
+           if n % i == 0:
+               break
+           else:
+               count += 1
+
+print(count)
+
+
