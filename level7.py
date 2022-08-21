@@ -47,20 +47,4 @@ for n in data:
 print(prime_count)
 
 
-N = int(input())
-data = list(map(int, input().split()))
-count = 0
-
-for n in data:
-   if n <= 1:
-       continue
-   primeYes = True
-   for i in range(2, n):
-       if n % i == 0:
-           primeYes = False
-           break
-   if primeYes:
-       count += 1
-
-print(count)
 
