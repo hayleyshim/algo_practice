@@ -12,3 +12,18 @@ def factorial(n):
 
 n = int(input())
 print(factorial(n))
+
+
+#10870
+"""
+n이 주어졌을 때, n번째 피보나치 수를 구하는 프로그램을 작성하시오.
+"""
+
+def fibonachi(n):
+    if n > 1:
+        return fibonachi(n-1)+fibonachi(n-2)
+
+    return n
+
+n = int(input())
+print(fibonachi(n))
