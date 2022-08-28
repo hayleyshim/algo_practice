@@ -7,20 +7,19 @@
 
 첫째 줄에 K원을 만드는데 필요한 동전 개수의 최솟값을 출력한다.
 
+그리디 알고리즘 : 미래를 생각하지 않고 각 단계에서 가장 최선의 선택을 하는 기법
+
 """
 N, K = map(int, input().split())
-coin_list = list()
 
-for i in range(N):
-    coin_list.append(int(input()))
+coin = []
+cnt = 0
 
-count = 0
+for i in range(N) :
+    coin.insert(0, int(input()))
 
-for i in reversed(range(N)):
-    count += K//coin_list[i]
-    K %= coin_list[i]
+for i in coin :
+    cnt += K // i
+    K = K % i
 
-    if K == 0:
-        break
-
-print(count)
+print(cnt)
