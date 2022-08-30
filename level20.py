@@ -7,7 +7,7 @@
 분할정복
 """
 import sys
-input = sys.stdin.readline()
+#input = sys.stdin.readline()
 
 #입력 받기
 n = int(input())
