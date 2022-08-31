@@ -19,7 +19,7 @@ for i in range(N) :
     coin.insert(0, int(input()))
 
 for i in coin :
-    cnt += K // i
-    K = K % i
+    cnt += K // i #몫을 cnt에 더함
+    K = K % i #나머지로 확인
 
 print(cnt)
