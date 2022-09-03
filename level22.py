@@ -42,4 +42,3 @@ for i in range(n):
         heapq.heappush(heap,(-1)*a)
         # 넣어주는 값에 -1을 곱해 heap에 push를 해주면
         # 가장 큰 값이 음수가 되면 가장 작은 값이 되기 때문에 최대힙 구현이 가능
-
