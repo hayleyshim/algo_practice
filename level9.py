@@ -35,3 +35,22 @@ for i in permutationArray:
         ans = max(ans, sum(i))
 print(ans)
 
+#2231
+"""
+어떤 자연수 N이 있을 때, 
+그 자연수 N의 분해합은 N과 N을 이루는 각 자리수의 합을 의미
+자연수 N이 주어졌을 때, N의 가장 작은 생성자를 구해내는 프로그램을 작성
+"""
+
+N = int(input())
+result = 0
+
+for i in range(1 , N+1):
+    a = list(map(int, str(i)))
+    s = i + sum(a)
+    if(s == N):
+        result = i
+        break
+print(result)
+
+
