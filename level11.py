@@ -56,3 +56,16 @@ for i in range(m):
         print(1, end=' ')
     else:
         print(0, end=' ')
+
+
+input()
+card = set(map(int, input().split()))
+
+input()
+own = list(map(int, input().split()))
+
+for i in own:
+    if i in card:
+        print(1, end=' ')
+    else:
+        print(0, end=' ')
