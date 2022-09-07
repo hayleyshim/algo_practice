@@ -24,6 +24,11 @@ for i in range(3):
     x_.append(x)
     y_.append(y)
 
+#for문이 반복되는 동안 count 함수를 이용해서
+# 두 개의 리스트에서 각 인덱스에 위치한 요소의 개수가 한 개인지를 찾았다.
+# if조건식으로 두 개의 리스트에서 count 개수가 1인 요소를 각각 x4, y4 변수에 선언하여 출력하였다.
+
+
 for i in range(3):
     if x_.count(x_[i]) == 1:
         x = x_[i]
