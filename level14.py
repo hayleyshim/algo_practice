@@ -43,19 +43,21 @@ for i in P:
 
 """
 
-N, M = map(int, input().split())
-li = []
+n, m = list(map(int, input().split()))
+s = []
+
 
 def dfs(start):
-    if len(li) == M:
-        print(''.join(map(str,li)))
+    if len(s) == m:
+        print(' '.join(map(str, s)))
         return
 
-    for i in range(start, N+1):
-        if i not in li:
-            li.append(i)
-            dfs(i+1)
-            li.pop()
+    for i in range(start, n + 1):
+        if i not in s:
+            s.append(i)
+            dfs(i + 1)
+            s.pop()
+
 
 dfs(1)
 
