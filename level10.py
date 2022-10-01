@@ -70,7 +70,7 @@ li = quick_sort(li)
 for i in li:
     print(i)
 
-#merge sort
+#merge 1.sort
 # 병합정렬은 어떤 상황에서도 O(nlogn)의 시간복잡도를 보장
 # O(nlogn)의 시간복잡도를 가지니 안정성 부분에서는 더 좋다
 # Merge Sort
@@ -124,7 +124,7 @@ for i in li:
     print(i)
 
 
-#heap sort
+#heap 1.sort
 # 병합정렬과 같이 시간복잡도 O(nlogn)을 보장하는 정렬 알고리즘
 
 import heapq
