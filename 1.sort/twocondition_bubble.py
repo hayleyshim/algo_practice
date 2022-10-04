@@ -6,7 +6,7 @@
 sample = ['propose', 'change', 'teach', 'propose', 'teach', 'program', 'change', 'make', 'teach']
 answer = []
 tmp = {}
-for w in sampel:
+for w in sample:
     w1 = w.lower()
     if w1 in tmp:
         tmp[w1] += 1

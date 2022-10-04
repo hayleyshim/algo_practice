@@ -8,11 +8,11 @@ def swap(data, a, b):
 
 def selectsort(tmplist):
     for i in range(len(tmplist)):
-        mindix = i
+        minidx = i
 
     for j in range(i+1, len(tmplist)):
         if tmplist[j] < tmplist[minidx]:
-            mindix = j
+            minidx = j
     if minidx != i:
         swap(tmplist, minidx, i)
 
