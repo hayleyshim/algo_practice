@@ -1,13 +1,15 @@
+# 이차원리스트 : for문 중첩
 def solution(row, col):
-    result = [[0 for _ in range(col)] for _ in range(row)]
+    result = [[0 for _ in range(col)] for _ in range(row)] #0으로 채워진 2차원 리스트
     num = 1
 
     for r in range(row):
         for c in range(col):
-            result[c][r] = num
+            result[r][c] = num
             num += 1
 
     return result
+
 
 def main():
     r = 5
