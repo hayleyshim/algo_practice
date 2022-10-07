@@ -23,3 +23,6 @@ print("s6 = ", s6)
 #숫자를 문자여로가 어하기 위해 변환한다
 s7 = "YOU" + str(1) + "위"
 print("s7 = ", s7)
+
+s2 = "Good night"
+print("s2 = ", s2)

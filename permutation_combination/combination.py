@@ -7,9 +7,9 @@ def combi1(nums, n, r, start):
             print()
             return
     for i in range(start, len(nums)):
-        visit[i] = True
+        visit1[i] = True
         combi1(nums, n, r-1, i+1)
-        visit[i] = False
+        visit1[i] = False
 
 
 def combi2(nums, ans, n, r, idx, target):
