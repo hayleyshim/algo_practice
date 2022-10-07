@@ -9,6 +9,8 @@ s3 = s1[2:7]
 print(s3)
 print("s3 = ", s3)
 
+print("s4 = ", s3)
+
 #문자열과 문자열 변수를 더할 수 있다.
 s4 = "YOU"
 s5 = "Global Reader " + s4
@@ -26,3 +28,12 @@ print("s7 = ", s7)
 
 s2 = "Good night"
 print("s2 = ", s2)
+
+s2 = s2[2:3]
+print("s2=", s2)
+
+s3 = "hello"
+s4 = "global reader " + s3
+print("s4= ", s4)
+
+print(s4 + s5)

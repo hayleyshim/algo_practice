@@ -3,6 +3,15 @@ s2 = "010 1234 1234"
 s3 = "010--8769"
 s4 = "010-5793-8769"
 
+print(s1)
+splitList1 = s1.split()
+print("s1.split() = ", splitList1)
+
+print("\nJoin")
+strJoin = "*".join(splitList1)
+print(strJoin)
+
+
 print("s1 = ", s1)
 splitList1 = s1.split()
 print("s1.split() =", splitList1)
@@ -30,3 +39,4 @@ print(size)
 print("문자열을 리스트로")
 sample = list(s1)
 print(sample)
+
