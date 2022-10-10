@@ -13,3 +13,21 @@ for i in range(1, len(tmplist)):
 
     tmplist[idx + 1] = standard
     print(tmplist)
+
+
+print('----------------')
+
+tmplist = [10, 2,1 , 3, 4]
+print(tmplist)
+
+for i in range(1, len(tmplist)):
+    standard = tmplist[i]
+    idx = i - 1
+
+    while idx >= 0 and standard < tmplist[idx]:
+        tmplist[idx+1] = tmplist[idx]
+        idx -= 1
+
+    tmplist[idx + 1] = standard
+    print(tmplist)
+
