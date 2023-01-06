@@ -1,10 +1,11 @@
 # sort, sorted 오름차순
 
-"""
+
 def solution(strings, n):
     answer = []
-    answer = sorted(strings, key=lambda x : (x[n], x))
+    answer = sorted(strings, key=lambda x : (x[n],x))
     return answer
+
 """
 
 test = [(1,8),(2,3),(7,9),(6,1),(4,5)]
@@ -33,10 +34,14 @@ def solution(strings, n):
                     answer[j], answer[j+1] = answer[j+1], answer[j]
 
     return answer
+"""
 
 # main
 strings = ["sun", "bed", "car"]
 n = 1
+
+res = solution(strings, n)
+print(res)
 
 strings = ["abce", "abcd", "cdx"]
 n = 2
