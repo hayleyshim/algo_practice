@@ -16,6 +16,7 @@ def solution(row, col):
 
     return result
 
+
 def main():
     r = 5
     c = 5
