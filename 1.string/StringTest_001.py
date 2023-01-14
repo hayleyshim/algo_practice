@@ -22,7 +22,7 @@ print("s5 = ", s5)
 s6 = "Global Reader" + "YOU"
 print("s6 = ", s6)
 
-#숫자를 문자여로가 어하기 위해 변환한다
+#숫자를 문자열과 더하기 위해 변환한다
 s7 = "YOU" + str(1) + "위"
 print("s7 = ", s7)
 
